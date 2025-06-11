@@ -25,9 +25,9 @@ public class Flilght_booking_site extends Browser {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		driver.findElement(By.xpath("//span[@class='commonModal__close']")).click(); // close login pop-up
 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='fromCity']"))).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div/label[@for=\"fromCity\"]"))).click();
 
-		driver.findElement(By.xpath("//*[@role=\"combobox\"]//input")).sendKeys("de");
+		driver.findElement(By.xpath("//input[@placeholder=\"From\"]")).sendKeys("de");
 
 //		WebElement ToLocationSearchBox = driver.findElement(By.xpath("//input[@id=\"fromCity\"]"));
 //		ToLocationSearchBox.click();
@@ -51,32 +51,63 @@ public class Flilght_booking_site extends Browser {
 	public void SearchTOFlight() throws InterruptedException {
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='toCity']"))).click();
-		driver.findElement(By.xpath("//*[@role=\"combobox\"]//input")).sendKeys("be");
-
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div/label[@for=\"toCity\"]"))).click();
+	driver.findElement(By.xpath("//input[@placeholder=\"To\"]")).sendKeys("beng");
+	
+Thread.sleep(4000);
 		String Tocity = "Bengaluru";
-		List<WebElement> TocityList = driver.findElements(By.xpath("//*[@id=\"react-autowhatever-1\"]//li"));
-
-		for (WebElement Tocitys : TocityList) {
-
-			String AllTocitylist = Tocitys.getText();
-
-			if (AllTocitylist.contains(Tocity)) {
-				Tocitys.click();
-				break;
-			}
-
+	//String tocity1 = "Dhanbad";
+		List<WebElement> TocityList = driver.findElements(By.xpath("//div[@id=\"react-autowhatever-1\"]//li/div"));
+		
+		
+		for(int i=0;i<TocityList.size();i++) {
+			
+			System.out.println("all city:     "+TocityList.get(i).getText());
+			
+			
+		//	driver.findElement(By.xpath("//*[@id=\"react-autowhatever-1-section-0-item-0\"]//div")).click();
+			if(TocityList.contains(Tocity)) {
+				System.out.println("condition 1");
+				TocityList.get(i).click();}
+			else {
+				System.out.println("condition 2");
+driver.findElement(By.xpath("//*[@id=\"react-autowhatever-1-section-0-item-0\"]//div")).click();	
+		break;	}
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+//		for (WebElement Tocitys : TocityList) {
+//
+//			String AllTocitylist = Tocitys.getText();
+//System.out.println(AllTocitylist);
+//			if (AllTocitylist.contains(Tocity)) {
+//				
+//				//driver.findElement(By.xpath("//*[@id=\"react-autowhatever-1-section-0-item-0\"]")).click();
+//				Tocitys.click();
+//				
+//			}else {
+//				System.out.println("from city condition 2");
+//				driver.findElement(By.xpath("//*[@id=\"react-autowhatever-1-section-0-item-0\"]")).click();
+//			}
+//
+//		}
 	}
 
 	@Test(priority = 4)
 	public void FlightDate_ClassType() {
-		
+
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
 		driver.findElement(By.xpath("//div[@aria-label=\"Fri Jul 18 2025\"]//p[text()='18']")).click();
-
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("//*[@class=\"flt_fsw_inputBox dates reDates inactiveWidget \"]")))
 				.click();

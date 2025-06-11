@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium_Concept.Selenium_Concept.Flilght_booking_site">
+      <class name="Selenium_Concept.Selenium_Concept.Flight_Select_page">
         <methods>
+          <include name="ss"/>
           <include name="Open_broser"/>
-          <include name="FlightDate_ClassType"/>
         </methods>
-      </class> <!-- Selenium_Concept.Selenium_Concept.Flilght_booking_site -->
+      </class> <!-- Selenium_Concept.Selenium_Concept.Flight_Select_page -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

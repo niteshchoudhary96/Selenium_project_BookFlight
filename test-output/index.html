@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\nites\AppData\Local\Temp\testng-eclipse-232240108\testng-customsuite.xml</span>
+                    <span>C:\Users\nites\AppData\Local\Temp\testng-eclipse-677425488\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Selenium_Concept.Selenium_Concept.Flight_Select_page" class="method navigator-link" hash-for-method="ss">ss</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +117,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Selenium_Concept.Selenium_Concept.Flilght_booking_site" class="method navigator-link" hash-for-method="FlightDate_ClassType">FlightDate_ClassType</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Selenium_Concept.Selenium_Concept.Flight_Select_page" class="method navigator-link" hash-for-method="FlightDate_ClassType">FlightDate_ClassType</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Selenium_Concept.Selenium_Concept.Flilght_booking_site" class="method navigator-link" hash-for-method="Open_Website">Open_Website</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Selenium_Concept.Selenium_Concept.Flight_Select_page" class="method navigator-link" hash-for-method="Open_Website">Open_Website</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Selenium_Concept.Selenium_Concept.Flilght_booking_site" class="method navigator-link" hash-for-method="SearchFromFlight">SearchFromFlight</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Selenium_Concept.Selenium_Concept.Flight_Select_page" class="method navigator-link" hash-for-method="SearchFromFlight">SearchFromFlight</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Selenium_Concept.Selenium_Concept.Flilght_booking_site" class="method navigator-link" hash-for-method="SearchTOFlight">SearchTOFlight</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Selenium_Concept.Selenium_Concept.Flight_Select_page" class="method navigator-link" hash-for-method="SearchTOFlight">SearchTOFlight</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -133,10 +147,79 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Selenium_Concept.Selenium_Concept.Flight_Select_page</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ss">
+                  </a> <!-- ss -->
+                  <span class="method-name">ss</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@class=&quot;splitClsListingDetailsBottom&quot;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [34ff6ff1-10e0-42cb-8477-681a2bd0fc2d, findElement {using=xpath, value=//*[@class=&quot;splitClsListingDetailsBottom&quot;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 139.0.1, moz:accessibilityChecks: false, moz:buildID: 20250529122813, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12216, moz:profile: C:\Users\nites\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 34ff6ff1-10e0-42cb-8477-681a2bd0fc2d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	at Selenium_Concept.Selenium_Concept.Flight_Select_page.ss(Flight_Select_page.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Selenium_Concept.Selenium_Concept.Flilght_booking_site</span>
+              <span class="class-name">Selenium_Concept.Selenium_Concept.Flight_Select_page</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -172,7 +255,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\nites\AppData\Local\Temp\testng-eclipse-232240108\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\nites\AppData\Local\Temp\testng-eclipse-677425488\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -181,7 +264,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Selenium_Concept.Selenium_Concept.Flilght_booking_site&quot;/&gt;
+      &lt;class name=&quot;Selenium_Concept.Selenium_Concept.Flight_Select_page&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -221,28 +304,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'FlightDate_ClassType')
-data.setCell(0, 2, 'Selenium_Concept.Selenium_Concept.Flilght_booking_site')
-data.setCell(0, 3, 5883);
+data.setCell(0, 1, 'ss')
+data.setCell(0, 2, 'Selenium_Concept.Selenium_Concept.Flight_Select_page')
+data.setCell(0, 3, 10065);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Open_Website')
-data.setCell(1, 2, 'Selenium_Concept.Selenium_Concept.Flilght_booking_site')
-data.setCell(1, 3, 2251);
+data.setCell(1, 1, 'SearchTOFlight')
+data.setCell(1, 2, 'Selenium_Concept.Selenium_Concept.Flight_Select_page')
+data.setCell(1, 3, 4560);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SearchFromFlight')
-data.setCell(2, 2, 'Selenium_Concept.Selenium_Concept.Flilght_booking_site')
-data.setCell(2, 3, 1442);
+data.setCell(2, 1, 'FlightDate_ClassType')
+data.setCell(2, 2, 'Selenium_Concept.Selenium_Concept.Flight_Select_page')
+data.setCell(2, 3, 4387);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'SearchTOFlight')
-data.setCell(3, 2, 'Selenium_Concept.Selenium_Concept.Flilght_booking_site')
-data.setCell(3, 3, 674);
+data.setCell(3, 1, 'SearchFromFlight')
+data.setCell(3, 2, 'Selenium_Concept.Selenium_Concept.Flight_Select_page')
+data.setCell(3, 3, 1606);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Open_Website')
+data.setCell(4, 2, 'Selenium_Concept.Selenium_Concept.Flight_Select_page')
+data.setCell(4, 3, 1082);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -268,26 +355,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Selenium_Concept.Selenium_Concept.Flilght_booking_site</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Selenium_Concept.Selenium_Concept.Flight_Select_page</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">Open_broser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ss</span>
+                <span class="method-start">4695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">Open_Website</span>
-                <span class="method-start">4383 ms</span>
+                <span class="method-start">14765 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SearchFromFlight</span>
-                <span class="method-start">6641 ms</span>
+                <span class="method-start">15849 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SearchTOFlight</span>
-                <span class="method-start">8084 ms</span>
+                <span class="method-start">17456 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">FlightDate_ClassType</span>
-                <span class="method-start">8761 ms</span>
+                <span class="method-start">22018 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
