@@ -7,6 +7,8 @@
         <methods>
           <include name="ss"/>
           <include name="Open_broser"/>
+          <include name="SearchTOFlight"/>
+          <include name="FlightDate_ClassType"/>
         </methods>
       </class> <!-- Selenium_Concept.Selenium_Concept.Flight_Select_page -->
     </classes>
